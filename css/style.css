@@ -314,3 +314,35 @@ form{
     justify-content: left;
     padding-left: 12%;
 }
+
+.containerProduto{
+    width: 75%;
+    height: 420px;
+    display: flex;
+    gap: 16px;
+    margin-top: 64px;
+}
+
+.containerProduto img{
+    width: 45%;
+}
+
+
+.containerProduto .sobreProduto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+    gap: 8px;
+}
+
+
+.containerProduto .sobreProduto h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.containerProduto .sobreProduto span{
+    font-weight: 700;
+}
