@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -72,6 +74,7 @@ button {
     padding: 16px;
     background: none;
     color: #2A7AE4;
+    cursor: pointer;
 }
 
 .banner {
@@ -109,6 +112,7 @@ button {
 .buttonAzul {
     background-color: #2A7AE4;
     color: #fff;
+    cursor: pointer;
 }
 
 main {
@@ -142,8 +146,13 @@ main {
     color: #2A7AE4;
     font-size: 16px;
     font-weight: 700;
+    
 }
 
+.containerVerTudo a{
+    text-decoration: none;
+    color: #2a7ae4;
+}
 .containerCategoria {
     width: 100%;
     display: flex;
@@ -345,4 +354,42 @@ form{
 
 .containerProduto .sobreProduto span{
     font-weight: 700;
+}
+
+.produtos{
+    display: flex;
+    gap: 8px;
+}
+
+.lista-todos-produtos{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 22px;
+}
+
+.botao-remover{
+    background-color: #2A7AE4;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botao-editar{
+    width: 182px;
+    padding: 16px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #2A7AE4;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.botao-editar:hover{
+    background-color: #3949AB;
+}
+.botao-remover:hover{
+    background-color: #C62828;
+    border-color: #C62828;
 }

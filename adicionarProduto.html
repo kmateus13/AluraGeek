@@ -4,54 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Adcionar produto</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/controle.ico">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
         <div class="navbar">
             <div class="container-Nav">
-                <img src="../imgs/Logo.png" alt="Logo">
+                <a href="./index.html"><img src="./imgs/Logo.png" alt="Logo"></a>
                 <div class="campoPesquisa">
                     <input type="text" placeholder="O que deseja encontrar?" name="" id="pesquisa">
-                    <img src="../imgs/Lupa.png" alt="Lupa">
+                    <img src="./imgs/Lupa.png" alt="Lupa">
                 </div>
             </div>
-            <button>Menu administrador</button>
+           <a href="produtos.html"><button >Menu administrador</button></a> 
         </div>
     </header>
     <main>
         <section class="containerAddProduto">
             <h1>Adicionar produto</h1>
             <div class="campos">
-                <input type="text" required>
+                <input id="urlImagem" type="text" required>
                 <span>URL da imagem</span>
             </div>
             <div class="campos">
-                <input type="text" required>
+                <input id="txtCategoria" type="text" required>
                 <span>Categoria</span>
             </div>
             <div class="campos">
-                <input type="text" required>
+                <input id="txtNomeProd" type="text" required>
                 <span>Nome do produto</span>
             </div>
             <div class="campos">
-                <input type="text" required>
+                <input id="precoProd" type="text" required>
                 <span>Preço do produto</span>
             </div>
             <div class="campos">
-                <textarea name="" id="" cols="30" rows="10" required></textarea>
+                <textarea name="" id="descricaoProd" cols="30" rows="10" required></textarea>
                 <span>Descrição do produto</span>
             </div>
-            <button class="buttonAzul">Enviar mensagem</button>
+            <button id="btnAddProd" class="buttonAzul" >Adicionar produto</button>
         </section>
     </main>
     <footer>
         <div class="informacoes">
             <div class="containerInformacoes">
                 <div class="informacoes-Logo">
-                    <img src="../imgs/Logo.png" alt="Logo">
+                    <img src="./imgs/Logo.png" alt="Logo">
                 </div>
                 <div class="informacoes-Sobre">
                     <span>Quem somos nós</span>
@@ -73,15 +74,18 @@
                             <span>Escreva sua mensagem</span>
                         </div>
                     </form>
-                    <button class="buttonAzul">Enviar mensagem</button>
+                    <button  class="buttonAzul">Enviar mensagem</button>
                 </div>
             </div>
         </div>
         <div class="rodape">
-            <span>Desenvolvido por Fulano de Tal</span>
+            <span>Desenvolvido por Klisman Mateus</span>
             <span>2023</span>
         </div>
     </footer>
+    <script src="./controllers/produtos-controller.js" type="module"></script>
+    <script src="./controllers/cria-produtos-controller.js" type="module"></script>
+    <script src="./services/produtos-services.js" type="module"></script>
 </body>
 
 </html>

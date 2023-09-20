@@ -4,41 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Produtos</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/controle.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="navbar navLogin">
+        <div class="navbar">
             <div class="container-Nav">
-                <img src="../imgs/Logo.png" alt="Logo">
+               <a href="./index.html"><img src="./imgs/Logo.png" alt="Logo"></a> 
                 <div class="campoPesquisa">
                     <input type="text" placeholder="O que deseja encontrar?" name="" id="pesquisa">
-                    <img src="../imgs/Lupa.png" alt="Lupa">
+                    <img src="./imgs/Lupa.png" alt="Lupa">
                 </div>
             </div>
+            <button>Login</button>
         </div>
     </header>
     <main>
-        <section class="containerLogin">
-            <h1>Iniciar Sessão</h1>
-            <div class="campos">
-                <input type="text" required>
-                <span>Escreva seu email</span>
+        <div class="categoria">
+            <div class="topo-Categoria">
+                <h1>Todos os produtos</h1>
+                <a href="adicionarProduto.html"><button id="btnAddProd" class="buttonAzul bi-plus-lg"> Adicionar Produto</button></a>
             </div>
-            <div class="campos">
-                <input type="password" required>
-                <span>Escreva sua senha</span>
+            <div class="containerCategoria">
+                <!--TODOS OS PRODUTOS AQUI-->
             </div>
-            <button class="buttonAzul">Entrar</button>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="informacoes">
             <div class="containerInformacoes">
                 <div class="informacoes-Logo">
-                    <img src="../imgs/Logo.png" alt="Logo">
+                    <img src="./imgs/Logo.png" alt="Logo">
                 </div>
                 <div class="informacoes-Sobre">
                     <span>Quem somos nós</span>
@@ -65,10 +65,12 @@
             </div>
         </div>
         <div class="rodape">
-            <span>Desenvolvido por Fulano de Tal</span>
+            <span>Desenvolvido por Klisman Mateus</span>
             <span>2023</span>
         </div>
     </footer>
+    <script src="./services/produtos-services.js" type="module"></script>
+    <script src="./controllers/todos-os-produtos.js" type="module"></script>
 </body>
 
 </html>
